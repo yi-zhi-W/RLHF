@@ -116,7 +116,7 @@ class CustomGRPOTrainer(Trainer):
         # GRPO 超参数
         
         # 生成配置
-        self.generation_config = GenerationConfig.from_pretrained("/nfs4/wyz/merged_qwen2audio/lora_5l_merged")
+        # self.generation_config = GenerationConfig.from_pretrained("")
         self.generation_config.update(**generating_args.to_dict())
         self.generation_config.pad_token_id = self.tokenizer.pad_token_id
         self.generation_config.eos_token_id = [self.tokenizer.eos_token_id] + self.tokenizer.additional_special_tokens_ids

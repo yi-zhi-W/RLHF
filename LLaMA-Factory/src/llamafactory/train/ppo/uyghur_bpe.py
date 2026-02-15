@@ -18,7 +18,7 @@ class Uyghur():
         # self._vocab2idx = {v: idx for idx, v in enumerate(self._vocab_list)}
         tokenizer = Tokenizer(BPE())
         tokenizer.pre_tokenizer = Whitespace()
-        self.tokenizer = tokenizer.from_file("/home/wyz/projects/LLaMA-Factory/src/llamafactory/train/ppo/tokenizer-trained.json")
+        self.tokenizer = tokenizer.from_file("./src/llamafactory/train/ppo/tokenizer-trained.json")
         self.tokenizer.add_tokens([' '])
         self.ind2char = {v: k for k, v in self.tokenizer.get_vocab().items()}
 

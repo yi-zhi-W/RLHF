@@ -20,5 +20,4 @@ def launch():
 
 
 if __name__ == "__main__":
-    print("/home/wyz/projects/LLaMA-Factory/src/llamafactory/launcher.py")
     launch()

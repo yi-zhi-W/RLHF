@@ -45,7 +45,6 @@ def run_sft(
     generating_args: "GeneratingArguments",
     callbacks: Optional[list["TrainerCallback"]] = None,
 ):
-    # print("/home/wyz/projects/LLaMA-Factory/src/llamafactory/train/sft/workflow.py  run_sft")
     tokenizer_module = load_tokenizer(model_args)
     tokenizer = tokenizer_module["tokenizer"]
     template = get_template_and_fix_tokenizer(tokenizer, data_args)
